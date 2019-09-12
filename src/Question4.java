@@ -6,31 +6,36 @@ public class Question4 {
         String input="";
         Integer counter=0,total=0;
 
-        while(input!="q") {
+
+        while(!input.equals("q")) {
 
             input = JOptionPane.showInputDialog(null, "Please enter an integer: ");
 
             if (input != "q") {
-                int checker = 0;
 
+                int checker = 0;
                 for (int i = 0; i < input.length(); i++) {
-                    if (i == 0 && (input.charAt(i) == '-' || Character.isDigit(input.charAt(i)))) {
+                    if (i == 0 && (input.charAt(i) == '-' || Character.isDigit(input.charAt(i))))
+                    {
                         checker++;
-                    } else if (Character.isDigit(input.charAt(i))) {
+                    }
+                    else if (Character.isDigit(input.charAt(i)))
+                    {
                         checker++;
                     }
                 }
 
-                if (checker == input.length() - 1) {
+                if (checker == input.length() && checker!=0) {
                     int num = Integer.parseInt(input);
 
                     counter++;
                     total += num;
                 }
             }
+
         }
 
-        System.out.println("Total: " + total + "\n");
+        System.out.println("Total: " + total + "\nNumbers Input: " + counter);
 
     }
 }
