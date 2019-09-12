@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Question6 {
+public class Question6Part2 {
     public static void main(String[] args) {
 
             String input = JOptionPane.showInputDialog(null,"Please enter your operation code and two numbers seperated by a single space or q or quit to exit):: ");
