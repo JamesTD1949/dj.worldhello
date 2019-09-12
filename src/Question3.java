@@ -9,9 +9,9 @@ public class Question3 {
 
         String taxAsString = JOptionPane.showInputDialog("Please enter your taxable income: ");
 
-        int taxable = int.parseInt(taxAsString);
+        double taxable = Double.parseDouble(taxAsString);
 
-        if(taxAsString>20000 && taxable<=36000)
+        if(taxable>20000 && taxable<=36000)
         {
             rate = 0.2;
 
@@ -25,15 +25,17 @@ public class Question3 {
             tax = taxCalc(rate,taxable);
         }
 
-        JOptionPane.showMessageDialog(null,"Gross Income: £" + taxAsString
-                + "\n");
+        double net = taxable-tax;
+
+        JOptionPane.showMessageDialog(null,"Gross Income: $" + taxAsString
+                + "\nTax Rate: " + rate + "%\nTax Due: $" + tax + "\nNet Income: $" + net);
 
 
 
 
     }
 
-    public static int taxCalc(double x, int y)
+    public static double taxCalc(double x, double y)
     {
         return y*x;
     }
