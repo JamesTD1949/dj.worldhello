@@ -11,7 +11,7 @@ public class Question5 {
 
         String lastString = input.substring(input.lastIndexOf(' '));
 
-        double firstNum = Double.parseDouble(firstString),secondNum = Double.parseDouble(lastString),result=0;
+        double firstNum = Double.parseDouble(firstString),secondNum = Double.parseDouble(lastString),result;
 
         switch (code){
 

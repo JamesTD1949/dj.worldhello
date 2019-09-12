@@ -35,7 +35,7 @@ public class Question3 {
 
     }
 
-    public static double taxCalc(double x, double y)
+    private static double taxCalc(double x, double y)
     {
         return y*x;
     }
