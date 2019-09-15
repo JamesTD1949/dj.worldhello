@@ -1,11 +1,11 @@
+package Lab0;
+
 import javax.swing.*;
 
 public class Question3 {
     public static void main(String[] args) {
 
         double rate = 0, tax = 0;
-
-        String name = JOptionPane.showInputDialog("Please enter your name: ");
 
         String taxAsString = JOptionPane.showInputDialog("Please enter your taxable income: ");
 

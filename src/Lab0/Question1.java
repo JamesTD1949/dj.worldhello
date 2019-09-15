@@ -1,3 +1,5 @@
+package Lab0;
+
 import javax.swing.*;
 
 public class Question1 {
@@ -14,7 +16,7 @@ public class Question1 {
         JOptionPane.showMessageDialog(null,"Name: " + name + "\nClass: " + className + "\nTotal Cost: £" + cost(snacks),"Confirm Dialog",JOptionPane.INFORMATION_MESSAGE);
     }
 
-    public static int cost(int x)
+    private static int cost(int x)
     {
         return x*2;
     }

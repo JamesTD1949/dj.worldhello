@@ -1,3 +1,5 @@
+package Lab0;
+
 import javax.swing.*;
 
 public class Question5 {

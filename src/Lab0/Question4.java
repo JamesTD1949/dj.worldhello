@@ -1,10 +1,12 @@
+package Lab0;
+
 import javax.swing.*;
 
 public class Question4 {
     public static void main(String[] args) {
 
         String input="";
-        Integer counter=0,total=0;
+        int counter=0,total=0;
 
 
         while(!input.equals("q")) {

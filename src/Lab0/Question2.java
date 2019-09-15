@@ -1,3 +1,5 @@
+package Lab0;
+
 import javax.swing.*;
 
 public class Question2 {
@@ -6,8 +8,6 @@ public class Question2 {
         String firstName = JOptionPane.showInputDialog("Please enter your first name: ");
 
         String secondName = JOptionPane.showInputDialog("Please enter your second name: ");
-
-        String initials = JOptionPane.showInputDialog("Please enter your initials: ");
 
         String distanceAsString = JOptionPane.showInputDialog("Please enter the distance you cycled (in KM): ");
 
@@ -19,7 +19,7 @@ public class Question2 {
                 + "\nDistance Cycled: " + distance + "\nAmount owed: £" + String.format("%.2f",cost));
     }
 
-    public static double sponsorCost(double x)
+    private static double sponsorCost(double x)
     {
         if(x<=10)
         {
